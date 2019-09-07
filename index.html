@@ -19,6 +19,12 @@
       text-align: center;
       line-height: 2;
     }
+    h3 {
+      background-color: black;
+      color: white;
+      line-height: 2;
+      margin : 0;
+    }
     p {
       font-size: 1.2em;
       line-height: 2;
@@ -40,7 +46,7 @@
     <a href="">show table of contents</a>
   </p>
   <p align="center">
-    <span style="font-size: 200%">&#10087;</span>
+    <span style="font-size: 150%">&#10087;</span>
   </p>
   <h2>
     DIVING IN
@@ -64,7 +70,7 @@
     <img src="http://diveintohtml5.info/i/openclipart.org_johnny_automatic_animals_on_see_saw.png">
   </p>
   <p align="center">
-    <span style="font-size: 200%">&#10087;</span>
+    <span style="font-size: 150%">&#10087;</span>
   </p>
   <h2>
     MIME TYPES
@@ -95,9 +101,106 @@
     Of course, reality is more complicated than that. The first generation of web servers (and I’m
     talking web servers from 1993) didn’t send the <code>Content-Type</code> header because it didn’t exist yet.
     (It wasn’t invented until 1994.) For compatibility reasons that date all the way back to 1993,
-    some popular web browsers will ignore the Content-Type header under certain circumstances. (This
+    some popular web browsers will ignore the <code>Content-Type</code> header under certain circumstances. (This
     is called “content sniffing.”) But as a general rule of thumb, everything you’ve ever looked at
     on the web — HTML pages, images, scripts, videos, PDFs, anything with a URL — has been served to
-    you with a specific MIME type in the Content-Type header.
+    you with a specific MIME type in the <code>Content-Type</code> header.
   </p>
+  <p>
+    Tuck that under your hat. We’ll come back to it.
+  </p>
+  <p align="center">
+    <span style="font-size: 150%">&#10087;</span>
+  </p>
+  <h2>
+    BACK TO THE W3C
+  </h2>
+  <img src="http://diveintohtml5.info/i/openclipart.org_johnny_automatic_a_dog_and_a_cat_with_an_umbrella.png" align="right">
+  <p>
+    For two and a half years, the W3C and the WHAT Working Group largely ignored each other. While the
+    WHAT Working Group focused on web forms and new HTML features, the W3C HTML Working Group was busy
+    with version 2.0 of XHTML. But by October 2006, it was clear that the WHAT Working Group had picked
+    up serious momentum, while XHTML 2 was still languishing in draft form, unimplemented by any major
+    browser. In October 2006, Tim Berners-Lee, the founder of the W3C itself, <a href="">announced that the W3C
+    would work together with the WHAT Working Group</a> to evolve HTML.
+  </p>
+  <p style="padding-left: 50px">
+    Some things are clearer with hindsight of several years. It is necessary to evolve HTML incrementally.
+    The attempt to get the world to switch to XML, including quotes around attribute values and slashes
+    in empty tags and namespaces all at once didn’t work. The large HTML-generating public did not move,
+    largely because the browsers didn’t complain. Some large communities did shift and are enjoying the fruits
+    of well-formed systems, but not all. It is important to maintain HTML incrementally, as well as continuing
+    a transition to well-formed world, and developing more power in that world.
+  </p>
+  <p style="padding-left: 50px">
+    The plan is to charter a completely new HTML group. Unlike the previous one, this one will be chartered
+    to do incremental improvements to HTML, as also in parallel xHTML. It will have a different chair and
+    staff contact. It will work on HTML and xHTML together. We have strong support for this group, from many
+    people we have talked to, including browser makers.
+  </p>
+  <p style="padding-left: 50px">
+    There will also be work on forms. This is a complex area, as existing HTML forms and XForms are both
+    form languages. HTML forms are ubiquitously deployed, and there are many implementations and users
+    of XForms. Meanwhile, the Webforms submission has suggested sensible extensions to HTML forms. The
+    plan is, informed by Webforms, to extend HTML forms.
+  </p>
+  <p>
+    One of the first things the newly re-chartered W3C HTML Working Group decided was to rename “Web Applications
+    1.0” to “HTML5.” And here we are, diving into HTML5.
+  </p>
+  <p align="center">
+    <span style="font-size: 150%">&#10087;</span>
+  </p>
+  <h2>
+    POSTSCRIPT
+  </h2>
+  <p>
+    In October 2009, the W3C <a href="">shut down the XHTML 2 Working Group</a> and <a href="">issued this statement
+    to explain their decision</a>:
+  </p>
+  <p style="padding-left: 50px">
+    When W3C announced the HTML and XHTML 2 Working Groups in March 2007, we indicated that we
+    would continue to monitor the market for XHTML 2. W3C recognizes the importance of a clear
+    signal to the community about the future of HTML.
+  </p>
+  <p style="padding-left: 50px">
+    While we recognize the value of the XHTML 2 Working Group’s contributions over the years,
+    after discussion with the participants, W3C management has decided to allow the Working Group’s
+    charter to expire at the end of 2009 and not to renew it.
+  </p>
+  <p>
+    The ones that win are the ones that ship.
+  </p>
+  <p align="center">
+    <span style="font-size: 150%">&#10087;</span>
+  </p>
+  <h2>
+    FURTHER READING
+  </h2>
+  <ul>
+    <li><a href="">The History of the Web</a>, an old draft by Ian Hickson</li>
+    <li><a href="">HTML/History</a>, by Michael Smith, Henri Sivonen, and others</li>
+    <li><a href="">A Brief History of HTML</a>, by Scott Reynen</li>
+  </ul>
+  <p align="center">
+    <span style="font-size: 150%">&#10087;</span>
+  </p>
+  <p>
+    This has been “How Did We Get Here?” The <a href="">full table of contents</a> has more if you’d like to keep reading.
+  </p>
+  <div style="border: 1px solid black">
+    <h3>
+      DID YOU KNOW?
+    </h3>
+    <p style="margin: 0; padding: 35px 35px 10px 35px">
+      In association with Google Press, O’Reilly is distributing this book in a variety of formats, including paper,
+      ePub, Mobi, and DRM-free PDF. The paid edition is called “HTML5: Up & Running,” and it is available now.
+      This chapter is included in the paid edition.
+    </p>
+    <p style="margin: 0; padding: 10px 35px 35px 35px">
+      If you liked this chapter and want to show your appreciation, you can buy “HTML5: Up & Running” with this
+      affiliate link or buy an electronic edition directly from O’Reilly. You’ll get a book, and I’ll get a buck.
+      I do not currently accept direct donations.
+    </p>
+  </div>
 </body>
