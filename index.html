@@ -1,0 +1,103 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>How Did We Get Here? - Dive Into HTML5</title>
+  <style>
+    body {
+      margin-left: 275px;
+      margin-right: 275px;
+    }
+    a {
+      color: FireBrick;
+      line-height: 2;
+    }
+    h1 {
+      text-align: center;
+      line-height: 2;
+    }
+    h2 {
+      text-align: center;
+      line-height: 2;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 2;
+    }
+  </style>
+</head>
+<body>
+  <p style="font-size: 125%">
+    You are here:
+    <a href="">Home</a>
+    <span>&#8227;</span>
+    <a href="">Dive Into HTML5</a>
+    <span>&#8227;</span>
+  </p>
+  <h1>
+    №1.<br>HOW DID WE GET HERE?
+  </h1>
+  <p align="center">
+    <a href="">show table of contents</a>
+  </p>
+  <p align="center">
+    <span style="font-size: 200%">&#10087;</span>
+  </p>
+  <h2>
+    DIVING IN
+  </h2>
+  <p>
+    <span style="font-size: 1.5em; color: FireBrick">R</span>ecently, I stumbled across a quote from a Mozilla developer
+    <a href="">about the tension inherent in creating standards</a>:
+  </p>
+  <p>
+    Implementations and specifications have to do a delicate dance together.
+    You don’t want implementations to happen before the specification is finished,
+    because people start depending on the details of implementations and that constrains
+    the specification. However, you also don’t want the specification to be finished
+    before there are implementations and author experience with those implementations,
+    because you need the feedback. There is unavoidable tension here, but we just have to muddle on through.
+  </p>
+  <p>
+    Keep this quote in the back of your mind, and let me explain how HTML5 came to be.
+  </p>
+  <p align="center">
+    <img src="http://diveintohtml5.info/i/openclipart.org_johnny_automatic_animals_on_see_saw.png">
+  </p>
+  <p align="center">
+    <span style="font-size: 200%">&#10087;</span>
+  </p>
+  <h2>
+    MIME TYPES
+  </h2>
+  <p>
+    This book is about HTML5, not previous versions of HTML, and not any version of XHTML.
+    But to understand the history of HTML5 and the motivations behind it, you need to understand
+    a few technical details first. Specifically, MIME types.
+  </p>
+  <p>
+    Every time your web browser requests a page, the web server sends “headers” before it
+    sends the actual page markup. These headers are normally invisible, although there are
+    web development tools that will make them visible if you’re interested. But the headers
+    are important, because they tell your browser how to interpret the page markup that follows.
+    The most important header is called <code>Content-Type</code>, and it looks like this:
+  </p>
+  <p style="padding-left: 100px">
+    <code>Content-Type: text/html</code>
+  </p>
+  <p>
+    “<code>text/html</code>” is called the “content type” or “MIME type” of the page. This header is the
+    <strong>only</strong> thing that determines what a particular resource truly is, and therefore how it
+    should be rendered. Images have their own MIME types (<code>image/jpeg</code> for JPEG images,
+    <code>image/png</code> for PNG images, and so on). JavaScript files have their own MIME type.
+    CSS stylesheets have their own MIME type. Everything has its own MIME type. The web runs on MIME types.
+  </p>
+  <p>
+    Of course, reality is more complicated than that. The first generation of web servers (and I’m
+    talking web servers from 1993) didn’t send the <code>Content-Type</code> header because it didn’t exist yet.
+    (It wasn’t invented until 1994.) For compatibility reasons that date all the way back to 1993,
+    some popular web browsers will ignore the Content-Type header under certain circumstances. (This
+    is called “content sniffing.”) But as a general rule of thumb, everything you’ve ever looked at
+    on the web — HTML pages, images, scripts, videos, PDFs, anything with a URL — has been served to
+    you with a specific MIME type in the Content-Type header.
+  </p>
+</body>
